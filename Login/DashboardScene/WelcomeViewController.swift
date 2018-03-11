@@ -4,7 +4,8 @@ class WelcomeController: UIViewController {
 
     @IBOutlet weak var payButton: UIButton!
     @IBOutlet weak var accountsButton: UIButton!
-    
+    var tapGestureRecogniser: UITapGestureRecognizer?
+
     var interactor: WelcomeInteractor?
 
     override func viewDidLoad() {
@@ -14,6 +15,7 @@ class WelcomeController: UIViewController {
         presenter.viewController = self
         setUp()
         setUpButtons()
+        setGestureRecognisers()
     }
 
     func setUp() {
@@ -26,6 +28,9 @@ class WelcomeController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: view)
     }
 
+    @IBAction func accountButtonTapped(_ sender: Any) {
+        accountsButton.resignFirstResponder()
+    }
     func setUpButtons() {
         payButton.backgroundColor = Constants.creditCardColor
         payButton.layer.cornerRadius = payButton.frame.height/3
@@ -48,5 +53,24 @@ extension WelcomeController {
         accountsButton.accessibilityIdentifier = "accountsButton"
         navigationItem.rightBarButtonItem?.accessibilityIdentifier = "lock-unlocked"
         navigationItem.leftBarButtonItem?.accessibilityIdentifier = "logoutButton"
+    }
+}
+
+// Gesture recognisers
+extension WelcomeController: UIGestureRecognizerDelegate {
+    func setGestureRecognisers() {
+        tapGestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(accountButtonTap))
+        guard let tapGestureRecogniser = tapGestureRecogniser else { return }
+        accountsButton.addGestureRecognizer(tapGestureRecogniser)
+    }
+
+    @objc func accountButtonTap() {
+        let alert = UIAlertController(title: "Accounts", message: "Account button tapped", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let alertAction2 = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+
+        alert.addAction(alertAction)
+        alert.addAction(alertAction2)
+        present(alert, animated: false, completion: nil)
     }
 }

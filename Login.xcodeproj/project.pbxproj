@@ -63,6 +63,10 @@
 		D118B3E12046AF8E00DD8450 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		D13359F3204CA33E00EC3147 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D134C3062044ACD70025CD20 /* XCTestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestExtension.swift; sourceTree = "<group>"; };
+		D1408615204DD6BD00DA7680 /* build_for_testing.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_for_testing.sh; sourceTree = "<group>"; };
+		D1408616204DD6D300DA7680 /* test_without_building.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test_without_building.sh; sourceTree = "<group>"; };
+		D1408617204DD6F000DA7680 /* only_test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = only_test.sh; sourceTree = "<group>"; };
+		D1408618204DD70400DA7680 /* skip_testing.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = skip_testing.sh; sourceTree = "<group>"; };
 		D15C3D4E204344190001C7D4 /* LockUnlockButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockUnlockButton.swift; sourceTree = "<group>"; };
 		D161A08C20441BEC0007DFBD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		D161A090204432360007DFBD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				D1123D78204205700086A5C4 /* Login */,
 				D1123D8D204205700086A5C4 /* LoginUITests */,
 				D1123D77204205700086A5C4 /* Products */,
+				D1408614204DD69900DA7680 /* scripts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +169,17 @@
 				D134C3062044ACD70025CD20 /* XCTestExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D1408614204DD69900DA7680 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D1408615204DD6BD00DA7680 /* build_for_testing.sh */,
+				D1408616204DD6D300DA7680 /* test_without_building.sh */,
+				D1408617204DD6F000DA7680 /* only_test.sh */,
+				D1408618204DD70400DA7680 /* skip_testing.sh */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 		D161A08E204430C20007DFBD /* Login */ = {

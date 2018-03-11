@@ -183,6 +183,9 @@
                                 <state key="normal" title="Accounts">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="accountButtonTapped:" destination="zkJ-kg-ejh" eventType="touchUpInside" id="BNn-Eq-QDM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10653596997542972" green="0.73372065360000005" blue="0.50046240032355904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -203,6 +206,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2G-dR-30L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jzm-md-zUK">
+                    <connections>
+                        <outlet property="delegate" destination="MwE-aW-gLv" id="Nnh-2Q-OGp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1397.5999999999999" y="120.98950524737631"/>
         </scene>
