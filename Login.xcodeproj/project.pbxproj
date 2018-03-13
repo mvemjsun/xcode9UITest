@@ -24,6 +24,10 @@
 		D118B3E22046AF8E00DD8450 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D118B3E12046AF8E00DD8450 /* DashboardScreen.swift */; };
 		D13359F4204CA33E00EC3147 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D13359F3204CA33E00EC3147 /* README.md */; };
 		D134C3072044ACD70025CD20 /* XCTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D134C3062044ACD70025CD20 /* XCTestExtension.swift */; };
+		D15B06CD205882B400F591CC /* Accounts.png in Resources */ = {isa = PBXBuildFile; fileRef = D15B06C9205882B400F591CC /* Accounts.png */; };
+		D15B06CE205882B400F591CC /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = D15B06CA205882B400F591CC /* Login.png */; };
+		D15B06CF205882B400F591CC /* Statement.png in Resources */ = {isa = PBXBuildFile; fileRef = D15B06CB205882B400F591CC /* Statement.png */; };
+		D15B06D0205882B400F591CC /* Dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = D15B06CC205882B400F591CC /* Dashboard.png */; };
 		D15C3D4F204344190001C7D4 /* LockUnlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C3D4E204344190001C7D4 /* LockUnlockButton.swift */; };
 		D161A08D20441BEC0007DFBD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161A08C20441BEC0007DFBD /* LoginService.swift */; };
 		D161A091204432360007DFBD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161A090204432360007DFBD /* LoginScreen.swift */; };
@@ -78,6 +82,10 @@
 		D1408616204DD6D300DA7680 /* test_without_building.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test_without_building.sh; sourceTree = "<group>"; };
 		D1408617204DD6F000DA7680 /* only_test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = only_test.sh; sourceTree = "<group>"; };
 		D1408618204DD70400DA7680 /* skip_testing.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = skip_testing.sh; sourceTree = "<group>"; };
+		D15B06C9205882B400F591CC /* Accounts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Accounts.png; path = ../../../../Desktop/Accounts.png; sourceTree = "<group>"; };
+		D15B06CA205882B400F591CC /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Login.png; path = ../../../../Desktop/Login.png; sourceTree = "<group>"; };
+		D15B06CB205882B400F591CC /* Statement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Statement.png; path = ../../../../Desktop/Statement.png; sourceTree = "<group>"; };
+		D15B06CC205882B400F591CC /* Dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dashboard.png; path = ../../../../Desktop/Dashboard.png; sourceTree = "<group>"; };
 		D15C3D4E204344190001C7D4 /* LockUnlockButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockUnlockButton.swift; sourceTree = "<group>"; };
 		D161A08C20441BEC0007DFBD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		D161A090204432360007DFBD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 		D1123D6D204205700086A5C4 = {
 			isa = PBXGroup;
 			children = (
+				D15B06C82058826B00F591CC /* Images */,
 				D13359F3204CA33E00EC3147 /* README.md */,
 				D1123D78204205700086A5C4 /* Login */,
 				D1123D8D204205700086A5C4 /* LoginUITests */,
@@ -205,6 +214,17 @@
 				D1408618204DD70400DA7680 /* skip_testing.sh */,
 			);
 			path = scripts;
+			sourceTree = "<group>";
+		};
+		D15B06C82058826B00F591CC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D15B06C9205882B400F591CC /* Accounts.png */,
+				D15B06CC205882B400F591CC /* Dashboard.png */,
+				D15B06CA205882B400F591CC /* Login.png */,
+				D15B06CB205882B400F591CC /* Statement.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		D161A08E204430C20007DFBD /* Login */ = {
@@ -350,11 +370,15 @@
 			files = (
 				D1123D84204205700086A5C4 /* LaunchScreen.storyboard in Resources */,
 				D1123D81204205700086A5C4 /* Assets.xcassets in Resources */,
+				D15B06CE205882B400F591CC /* Login.png in Resources */,
+				D15B06D0205882B400F591CC /* Dashboard.png in Resources */,
 				D13359F4204CA33E00EC3147 /* README.md in Resources */,
 				D1CC80B32057D06600E8CE1C /* StatementHeader.xib in Resources */,
 				D1123D7F204205700086A5C4 /* Main.storyboard in Resources */,
 				D1123DAC20422B430086A5C4 /* LogoutButton.xib in Resources */,
 				D17D15AB20558607004CCA54 /* StatementCell.xib in Resources */,
+				D15B06CD205882B400F591CC /* Accounts.png in Resources */,
+				D15B06CF205882B400F591CC /* Statement.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

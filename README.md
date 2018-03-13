@@ -14,3 +14,9 @@ When a correct username and password is entered the user is shown his account da
 * LoginScreen.swift - Has the Login screen definitions and interactions
 * XCTestExtension.swift - Has an `XCUIElement` and `XCTestCase` extensions.
 * StatementScreenTests.swift - Has tests for the statement screen.
+
+## Screens
+![Login](https://github.com/mvemjsun/xcode9UITest/master/Images/Login.png)
+![Dashboard](https://github.com/mvemjsun/xcode9UITest/master/Images/Dashboard.png)
+![Accounts](https://github.com/mvemjsun/xcode9UITest/master/Images/Accounts.png)
+![Statement](https://github.com/mvemjsun/xcode9UITest/master/Images/Satement.png)
