@@ -36,7 +36,17 @@ class LoginScreen {
         }
     }
 
-    func login(user userName: String, password passCode: String, submit: Bool = true) {
+    func loginWithRightCredentials(user userName: String, password passCode: String, submit: Bool = true) -> DashboardScreen {
+        login(user: userName, password: passCode, submit: submit)
+        return DashboardScreen()
+    }
+
+    func loginWithWrongCredentials(user userName: String, password passCode: String, submit: Bool = true) -> LoginScreen {
+        login(user: userName, password: passCode, submit: submit)
+        return LoginScreen()
+    }
+
+    private func login(user userName: String, password passCode: String, submit: Bool = true) {
         type(user: userName)
         type(password: passCode)
         guard submit else { return }

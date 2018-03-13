@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CourierNewBold.ttf">
+            <string>CourierNewPS-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="U5b-An-W63">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTe-5o-lz4">
+                    <rect key="frame" x="0.0" y="0.0" width="479" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAE-D7-Qpa">
+                            <rect key="frame" x="8" y="5" width="105" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="105" id="hJb-4m-Cnl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Db." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPF-d8-tgk">
+                            <rect key="frame" x="129" y="5" width="50" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="BJn-ED-DMA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kp-1c-DMg">
+                            <rect key="frame" x="194" y="5" width="50" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="aqu-dF-jym"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bal." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsz-1C-kHT">
+                            <rect key="frame" x="259" y="5" width="50" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="iCz-lG-tLv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.10588235294117647" green="0.73333333333333328" blue="0.50196078431372548" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Lsz-1C-kHT" firstAttribute="top" secondItem="VAE-D7-Qpa" secondAttribute="top" id="2ir-gY-36e"/>
+                        <constraint firstItem="3kp-1c-DMg" firstAttribute="leading" secondItem="sPF-d8-tgk" secondAttribute="trailing" constant="15" id="NVR-IO-YEL"/>
+                        <constraint firstItem="Lsz-1C-kHT" firstAttribute="leading" secondItem="3kp-1c-DMg" secondAttribute="trailing" constant="15" id="QVE-qJ-JSJ"/>
+                        <constraint firstItem="sPF-d8-tgk" firstAttribute="leading" secondItem="VAE-D7-Qpa" secondAttribute="trailing" constant="16" id="TyP-hl-4ws"/>
+                        <constraint firstItem="VAE-D7-Qpa" firstAttribute="top" secondItem="gTe-5o-lz4" secondAttribute="top" constant="5" id="UCC-zc-nSf"/>
+                        <constraint firstItem="sPF-d8-tgk" firstAttribute="top" secondItem="VAE-D7-Qpa" secondAttribute="top" id="cN5-nA-ao3"/>
+                        <constraint firstItem="3kp-1c-DMg" firstAttribute="top" secondItem="VAE-D7-Qpa" secondAttribute="top" id="dBJ-Rp-qVq"/>
+                        <constraint firstItem="VAE-D7-Qpa" firstAttribute="leading" secondItem="gTe-5o-lz4" secondAttribute="leading" constant="8" id="osh-sd-LZG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1058823529" green="0.73333333329999995" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gTe-5o-lz4" firstAttribute="centerY" secondItem="U5b-An-W63" secondAttribute="centerY" id="3GA-SO-WF9"/>
+                <constraint firstItem="gTe-5o-lz4" firstAttribute="leading" secondItem="U5b-An-W63" secondAttribute="leading" id="D3D-Kc-iRI"/>
+                <constraint firstItem="gTe-5o-lz4" firstAttribute="centerX" secondItem="U5b-An-W63" secondAttribute="centerX" id="HeW-fc-kBB"/>
+                <constraint firstItem="gTe-5o-lz4" firstAttribute="top" secondItem="f9v-mc-6pP" secondAttribute="top" id="lhH-0G-Jsd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="f9v-mc-6pP"/>
+            <point key="canvasLocation" x="-202.5" y="-307"/>
+        </view>
+    </objects>
+</document>

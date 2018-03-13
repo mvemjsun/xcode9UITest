@@ -163,9 +163,12 @@
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Pay">
+                                <state key="normal" title="Statement">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="M0j-jk-C9z" kind="show" identifier="statement" id="EZw-Fu-qtS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwE-aW-gLv">
                                 <rect key="frame" x="132" y="144" width="150" height="150"/>
@@ -180,7 +183,7 @@
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Accounts">
+                                <state key="normal" title="Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -188,7 +191,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.10653596997542972" green="0.73372065360000005" blue="0.50046240032355904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.73333333333333328" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MwE-aW-gLv" firstAttribute="top" secondItem="nPI-0q-Siq" secondAttribute="bottom" constant="20" id="BfR-Gf-oaL"/>
                             <constraint firstItem="nPI-0q-Siq" firstAttribute="top" secondItem="dNA-t1-Ckh" secondAttribute="top" constant="40" id="CQs-lQ-RL5"/>
@@ -202,7 +205,7 @@
                     <navigationItem key="navigationItem" title="Welcome" id="iYd-lC-2SI"/>
                     <connections>
                         <outlet property="accountsButton" destination="MwE-aW-gLv" id="pzb-2V-TAB"/>
-                        <outlet property="payButton" destination="M6X-GS-nD8" id="kuk-Yg-CS6"/>
+                        <outlet property="statementButton" destination="M6X-GS-nD8" id="kuk-Yg-CS6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2G-dR-30L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,6 +216,35 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1397.5999999999999" y="120.98950524737631"/>
+        </scene>
+        <!--Statement View Controller-->
+        <scene sceneID="bYK-Ku-gST">
+            <objects>
+                <tableViewController id="M0j-jk-C9z" customClass="StatementViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3Rf-ia-Kpt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.73333333333333328" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="statementCell" id="Fbj-Ta-FFU" customClass="StatementViewCell" customModule="Login" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fbj-Ta-FFU" id="ndO-im-ioJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M0j-jk-C9z" id="KB6-8G-Xge"/>
+                            <outlet property="delegate" destination="M0j-jk-C9z" id="0Oe-Af-Uuk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iYk-wa-F9S"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfE-nl-EXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114" y="121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0bm-HK-5tP">

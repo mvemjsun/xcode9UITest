@@ -10,5 +10,6 @@ struct Constants {
 
     static let loginTitle = "Login"
     static let welcomeTitle = "Dashboard"
+    static let statementsRows = 60
 
 }

@@ -15,7 +15,7 @@ class LoginService: LoginServiceProtocol {
     var delegate: LoginServiceDelegate?
 
     func login(with user: String, password auth: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             if user == Constants.userName && auth == Constants.password {
                 self.delegate?.didLoginWithSuccess()
             } else {

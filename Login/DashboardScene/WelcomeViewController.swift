@@ -2,7 +2,7 @@ import UIKit
 
 class WelcomeController: UIViewController {
 
-    @IBOutlet weak var payButton: UIButton!
+    @IBOutlet weak var statementButton: UIButton!
     @IBOutlet weak var accountsButton: UIButton!
     var tapGestureRecogniser: UITapGestureRecognizer?
 
@@ -16,6 +16,7 @@ class WelcomeController: UIViewController {
         setUp()
         setUpButtons()
         setGestureRecognisers()
+        setAccessibilityIds()
     }
 
     func setUp() {
@@ -32,8 +33,8 @@ class WelcomeController: UIViewController {
         accountsButton.resignFirstResponder()
     }
     func setUpButtons() {
-        payButton.backgroundColor = Constants.creditCardColor
-        payButton.layer.cornerRadius = payButton.frame.height/3
+        statementButton.backgroundColor = Constants.creditCardColor
+        statementButton.layer.cornerRadius = statementButton.frame.height/3
 
         accountsButton.backgroundColor = Constants.accountsColor
         accountsButton.layer.cornerRadius = accountsButton.frame.height/3
@@ -49,10 +50,10 @@ extension WelcomeController: LogoutButtonDelegateProtocol {
 extension WelcomeController {
 
     func setAccessibilityIds() {
-        payButton.accessibilityIdentifier = "payButton"
-        accountsButton.accessibilityIdentifier = "accountsButton"
-        navigationItem.rightBarButtonItem?.accessibilityIdentifier = "lock-unlocked"
-        navigationItem.leftBarButtonItem?.accessibilityIdentifier = "logoutButton"
+        statementButton.accessibilityIdentifier = Screen.DashBoard.statementButton
+        accountsButton.accessibilityIdentifier = Screen.DashBoard.accountsButton
+        navigationItem.rightBarButtonItem?.accessibilityIdentifier = Screen.DashBoard.unlockedButton
+        navigationItem.leftBarButtonItem?.accessibilityIdentifier = Screen.DashBoard.logoutButton
     }
 }
 

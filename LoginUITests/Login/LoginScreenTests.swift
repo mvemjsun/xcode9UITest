@@ -51,14 +51,14 @@ class LoginScreenTests: XCTestCase {
     }
 
     func test_LoginScreen_When_Wrong_UserDetails_ShowsAlert() {
-        loginScreen.login(user: "wrongUser", password: "wrongPass")
+        _ = loginScreen.loginWithWrongCredentials(user: "wrongUser", password: "wrongPass")
         waitForElement(loginScreen.authLabel, visibility: false)
         let element = XCUIApplication().alerts.firstMatch
         XCTAssertEqual(element.label, "LoginError")
     }
 
     func test_LoginScreen_WithWrongDetails_Shows_AuthMessage_And_ActivityIndicator() {
-        loginScreen.login(user: "wrongUser", password: "wrongPass")
+        _ = loginScreen.loginWithWrongCredentials(user: "wrongUser", password: "wrongPass")
         waitForElement(loginScreen.authLabel, visibility: true)
         let element = loginScreen.activityIndicator
         XCTAssertTrue(element.isVisible())

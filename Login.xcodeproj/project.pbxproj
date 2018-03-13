@@ -28,6 +28,17 @@
 		D161A08D20441BEC0007DFBD /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161A08C20441BEC0007DFBD /* LoginService.swift */; };
 		D161A091204432360007DFBD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161A090204432360007DFBD /* LoginScreen.swift */; };
 		D161A0942044329B0007DFBD /* ScreenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161A0932044329B0007DFBD /* ScreenConstants.swift */; };
+		D17D15A120558220004CCA54 /* StatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D15A020558220004CCA54 /* StatementViewController.swift */; };
+		D17D15A320558230004CCA54 /* StatementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D15A220558230004CCA54 /* StatementInteractor.swift */; };
+		D17D15A52055823E004CCA54 /* StatementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D15A42055823E004CCA54 /* StatementPresenter.swift */; };
+		D17D15A7205582BA004CCA54 /* StatementViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D15A6205582BA004CCA54 /* StatementViewCell.swift */; };
+		D17D15A92055838D004CCA54 /* StatementDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D15A82055838D004CCA54 /* StatementDataSource.swift */; };
+		D17D15AB20558607004CCA54 /* StatementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D17D15AA20558607004CCA54 /* StatementCell.xib */; };
+		D1CC80B32057D06600E8CE1C /* StatementHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1CC80B22057D06600E8CE1C /* StatementHeader.xib */; };
+		D1CC80B62058208100E8CE1C /* StatementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC80B52058208100E8CE1C /* StatementScreen.swift */; };
+		D1CC80B82058454C00E8CE1C /* StatementScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC80B72058454C00E8CE1C /* StatementScreenTests.swift */; };
+		D1CC80BB2058490100E8CE1C /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC80BA2058490100E8CE1C /* LoginHelper.swift */; };
+		D1CC80BD205856AD00E8CE1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC80BC205856AD00E8CE1C /* Constants.swift */; };
 		D1D92021204409EB00AC691E /* LoginAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D92020204409EB00AC691E /* LoginAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +82,17 @@
 		D161A08C20441BEC0007DFBD /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		D161A090204432360007DFBD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		D161A0932044329B0007DFBD /* ScreenConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenConstants.swift; sourceTree = "<group>"; };
+		D17D15A020558220004CCA54 /* StatementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementViewController.swift; sourceTree = "<group>"; };
+		D17D15A220558230004CCA54 /* StatementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementInteractor.swift; sourceTree = "<group>"; };
+		D17D15A42055823E004CCA54 /* StatementPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementPresenter.swift; sourceTree = "<group>"; };
+		D17D15A6205582BA004CCA54 /* StatementViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementViewCell.swift; sourceTree = "<group>"; };
+		D17D15A82055838D004CCA54 /* StatementDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDataSource.swift; sourceTree = "<group>"; };
+		D17D15AA20558607004CCA54 /* StatementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementCell.xib; sourceTree = "<group>"; };
+		D1CC80B22057D06600E8CE1C /* StatementHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementHeader.xib; sourceTree = "<group>"; };
+		D1CC80B52058208100E8CE1C /* StatementScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreen.swift; sourceTree = "<group>"; };
+		D1CC80B72058454C00E8CE1C /* StatementScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreenTests.swift; sourceTree = "<group>"; };
+		D1CC80BA2058490100E8CE1C /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		D1CC80BC205856AD00E8CE1C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1D92020204409EB00AC691E /* LoginAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +137,7 @@
 		D1123D78204205700086A5C4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D17D159F205581FF004CCA54 /* StatementScene */,
 				D161A092204432770007DFBD /* Constants */,
 				D1123D9A2042105D0086A5C4 /* DashboardScene */,
 				D1123D99204210530086A5C4 /* LoginScene */,
@@ -130,9 +153,11 @@
 		D1123D8D204205700086A5C4 /* LoginUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D1CC80B9205847BE00E8CE1C /* Helpers */,
 				D134C3052044ACB80025CD20 /* Extension */,
 				D161A08F204430CD0007DFBD /* Dashboard */,
 				D161A08E204430C20007DFBD /* Login */,
+				D1CC80B42058205F00E8CE1C /* Statement */,
 				D1123D90204205700086A5C4 /* Info.plist */,
 			);
 			path = LoginUITests;
@@ -206,6 +231,38 @@
 				D161A0932044329B0007DFBD /* ScreenConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		D17D159F205581FF004CCA54 /* StatementScene */ = {
+			isa = PBXGroup;
+			children = (
+				D17D15A020558220004CCA54 /* StatementViewController.swift */,
+				D17D15A220558230004CCA54 /* StatementInteractor.swift */,
+				D17D15A42055823E004CCA54 /* StatementPresenter.swift */,
+				D17D15A6205582BA004CCA54 /* StatementViewCell.swift */,
+				D17D15A82055838D004CCA54 /* StatementDataSource.swift */,
+				D17D15AA20558607004CCA54 /* StatementCell.xib */,
+				D1CC80B22057D06600E8CE1C /* StatementHeader.xib */,
+			);
+			path = StatementScene;
+			sourceTree = "<group>";
+		};
+		D1CC80B42058205F00E8CE1C /* Statement */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC80B52058208100E8CE1C /* StatementScreen.swift */,
+				D1CC80B72058454C00E8CE1C /* StatementScreenTests.swift */,
+			);
+			path = Statement;
+			sourceTree = "<group>";
+		};
+		D1CC80B9205847BE00E8CE1C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC80BA2058490100E8CE1C /* LoginHelper.swift */,
+				D1CC80BC205856AD00E8CE1C /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +351,10 @@
 				D1123D84204205700086A5C4 /* LaunchScreen.storyboard in Resources */,
 				D1123D81204205700086A5C4 /* Assets.xcassets in Resources */,
 				D13359F4204CA33E00EC3147 /* README.md in Resources */,
+				D1CC80B32057D06600E8CE1C /* StatementHeader.xib in Resources */,
 				D1123D7F204205700086A5C4 /* Main.storyboard in Resources */,
 				D1123DAC20422B430086A5C4 /* LogoutButton.xib in Resources */,
+				D17D15AB20558607004CCA54 /* StatementCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,18 +372,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17D15A52055823E004CCA54 /* StatementPresenter.swift in Sources */,
 				D15C3D4F204344190001C7D4 /* LockUnlockButton.swift in Sources */,
 				D1123D9E204213880086A5C4 /* LoginInteractor.swift in Sources */,
 				D1123DAE204230E40086A5C4 /* LogoutButton.swift in Sources */,
 				D1123DAA204222870086A5C4 /* WelcomePresenter.swift in Sources */,
+				D17D15A120558220004CCA54 /* StatementViewController.swift in Sources */,
 				D1123DA8204222780086A5C4 /* WelcomeInteractor.swift in Sources */,
+				D17D15A7205582BA004CCA54 /* StatementViewCell.swift in Sources */,
 				D1123D9C204212540086A5C4 /* LoginViewController.swift in Sources */,
 				D161A0942044329B0007DFBD /* ScreenConstants.swift in Sources */,
 				D1123D7A204205700086A5C4 /* AppDelegate.swift in Sources */,
 				D161A08D20441BEC0007DFBD /* LoginService.swift in Sources */,
 				D1123DA0204213990086A5C4 /* LoginPresenter.swift in Sources */,
 				D1123DA2204213BF0086A5C4 /* Constants.swift in Sources */,
+				D17D15A92055838D004CCA54 /* StatementDataSource.swift in Sources */,
 				D1123DA6204222640086A5C4 /* WelcomeViewController.swift in Sources */,
+				D17D15A320558230004CCA54 /* StatementInteractor.swift in Sources */,
 				D1D92021204409EB00AC691E /* LoginAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +400,11 @@
 				D118B3E22046AF8E00DD8450 /* DashboardScreen.swift in Sources */,
 				D1123D8F204205700086A5C4 /* LoginScreenTests.swift in Sources */,
 				D134C3072044ACD70025CD20 /* XCTestExtension.swift in Sources */,
+				D1CC80B62058208100E8CE1C /* StatementScreen.swift in Sources */,
+				D1CC80BB2058490100E8CE1C /* LoginHelper.swift in Sources */,
 				D161A091204432360007DFBD /* LoginScreen.swift in Sources */,
+				D1CC80B82058454C00E8CE1C /* StatementScreenTests.swift in Sources */,
+				D1CC80BD205856AD00E8CE1C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

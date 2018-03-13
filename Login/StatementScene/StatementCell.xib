@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Courier.ttc">
+            <string>Courier</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statementCell" rowHeight="73" id="E3B-Oe-U0l" customClass="StatementViewCell" customModule="Login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="529" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E3B-Oe-U0l" id="xBF-9M-s8t">
+                <rect key="frame" x="0.0" y="0.0" width="529" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uj5-YL-bSy">
+                        <rect key="frame" x="5" y="11" width="519" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD-MM-YYYY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy8-60-3fB">
+                                <rect key="frame" x="5" y="5" width="75" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="P85-2T-vVW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p21-bF-GIw">
+                                <rect key="frame" x="5" y="25" width="487" height="17"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3x-a2-XDH">
+                                <rect key="frame" x="90" y="5" width="60" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="DNj-ce-heo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAY-UZ-HsW">
+                                <rect key="frame" x="160" y="5" width="60" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="q2v-CT-cU7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwx-PV-hah">
+                                <rect key="frame" x="225" y="5" width="75" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="DHi-82-5Fq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p21-bF-GIw" secondAttribute="trailing" constant="27" id="0xO-Cj-cmc"/>
+                            <constraint firstItem="yAY-UZ-HsW" firstAttribute="leading" secondItem="K3x-a2-XDH" secondAttribute="trailing" constant="10" id="5jm-gK-fO5"/>
+                            <constraint firstItem="yAY-UZ-HsW" firstAttribute="top" secondItem="Oy8-60-3fB" secondAttribute="top" id="5oi-xF-f0o"/>
+                            <constraint firstItem="K3x-a2-XDH" firstAttribute="top" secondItem="Oy8-60-3fB" secondAttribute="top" id="A77-NF-Qbz"/>
+                            <constraint firstItem="Wwx-PV-hah" firstAttribute="leading" secondItem="yAY-UZ-HsW" secondAttribute="trailing" constant="5" id="BkM-5G-cSc"/>
+                            <constraint firstItem="Oy8-60-3fB" firstAttribute="top" secondItem="Uj5-YL-bSy" secondAttribute="top" constant="5" id="Bqe-hD-JYT"/>
+                            <constraint firstItem="K3x-a2-XDH" firstAttribute="leading" secondItem="Oy8-60-3fB" secondAttribute="trailing" constant="10" id="Mwe-y1-5XM"/>
+                            <constraint firstItem="p21-bF-GIw" firstAttribute="top" secondItem="Oy8-60-3fB" secondAttribute="bottom" constant="5" id="RZE-4d-xbL"/>
+                            <constraint firstItem="Wwx-PV-hah" firstAttribute="top" secondItem="Oy8-60-3fB" secondAttribute="top" id="WkM-eL-Fua"/>
+                            <constraint firstItem="p21-bF-GIw" firstAttribute="leading" secondItem="Uj5-YL-bSy" secondAttribute="leading" constant="5" id="e1F-sp-QhE"/>
+                            <constraint firstItem="p21-bF-GIw" firstAttribute="leading" secondItem="Oy8-60-3fB" secondAttribute="leading" id="iqA-ND-8dK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Uj5-YL-bSy" firstAttribute="top" secondItem="xBF-9M-s8t" secondAttribute="topMargin" id="3Xu-Jw-Htc"/>
+                    <constraint firstItem="Uj5-YL-bSy" firstAttribute="centerX" secondItem="xBF-9M-s8t" secondAttribute="centerX" id="Jdl-W4-Qhi"/>
+                    <constraint firstItem="Uj5-YL-bSy" firstAttribute="leading" secondItem="xBF-9M-s8t" secondAttribute="leading" constant="5" id="gVI-J8-eDM"/>
+                    <constraint firstItem="Uj5-YL-bSy" firstAttribute="centerY" secondItem="xBF-9M-s8t" secondAttribute="centerY" id="wex-6F-Q1L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="balance" destination="Wwx-PV-hah" id="7Um-3p-fSY"/>
+                <outlet property="containerView" destination="Uj5-YL-bSy" id="4SD-uq-rbc"/>
+                <outlet property="creditAmount" destination="yAY-UZ-HsW" id="e2T-cU-Dky"/>
+                <outlet property="debitAmount" destination="K3x-a2-XDH" id="UDQ-1G-ft1"/>
+                <outlet property="summary" destination="p21-bF-GIw" id="D0u-6B-7BM"/>
+                <outlet property="transactionDate" destination="Oy8-60-3fB" id="vaD-f0-iUb"/>
+            </connections>
+            <point key="canvasLocation" x="-57.5" y="-304.5"/>
+        </tableViewCell>
+    </objects>
+</document>

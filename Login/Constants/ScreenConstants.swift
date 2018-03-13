@@ -13,8 +13,16 @@ class Screen {
     struct DashBoard {
         static let welcomeText = "welcomeText"
         static let accountsButton = "accountsButton"
-        static let paymentButton = "paymentsButton"
+        static let statementButton = "statementButton"
         static let logoutButton = "logoutButton"
         static let unlockedButton = "lock-unlocked"
+    }
+
+    struct Statement {
+        static let transactionDate = "transactionDate"
+        static let creditAamount = "transactionCreditAmount"
+        static let debitAamount = "transactionDebitAmount"
+        static let accountBalance = "transactionAccountBalance"
+        static let transactionSummary = "transactionSummary"
     }
 }
