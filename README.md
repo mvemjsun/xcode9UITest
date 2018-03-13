@@ -16,7 +16,7 @@ When a correct username and password is entered the user is shown his account da
 * StatementScreenTests.swift - Has tests for the statement screen.
 
 ## Screens
-![Login](https://github.com/mvemjsun/xcode9UITest/master/Images/Login.png)
-![Dashboard](https://github.com/mvemjsun/xcode9UITest/master/Images/Dashboard.png)
-![Accounts](https://github.com/mvemjsun/xcode9UITest/master/Images/Accounts.png)
-![Statement](https://github.com/mvemjsun/xcode9UITest/master/Images/Satement.png)
+![Login](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Login.png)
+![Dashboard](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Dashboard.png)
+![Accounts](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Accounts.png)
+![Statement](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Satement.png)
