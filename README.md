@@ -19,4 +19,4 @@ When a correct username and password is entered the user is shown his account da
 ![Login](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Login.png)
 ![Dashboard](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Dashboard.png)
 ![Accounts](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Accounts.png)
-![Statement](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Satement.png)
+![Statement](https://github.com/mvemjsun/xcode9UITest/blob/master/Images/Statement.png)
