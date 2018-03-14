@@ -22,6 +22,7 @@ class StatementViewCell: UITableViewCell {
         balance.text = formatAmount(amount: transaction.balance)
         summary.text = transaction.summary.uppercased()
         setAccessibilityIds()
+        selectionStyle = .none
     }
 
     func formatDate(date: Date) -> String {

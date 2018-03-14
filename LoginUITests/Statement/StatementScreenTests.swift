@@ -38,6 +38,12 @@ class StatementScreenTests: XCTestCase {
         XCTAssertEqual("SUMMARY XXXXXXXX 55",summaryText.label)
     }
 
+    func test_StatementScreen_Has_StatementRow_WithRightSize() {
+        let cell = statementScreen.cellAt(row: 1)
+        launchStatementScreen()
+        XCTAssertEqual(55, cell.frame.height)
+    }
+
     private func launchStatementScreen() {
         waitForElement(dashBoardScreen.statementButton)
         statementScreen = dashBoardScreen.tapStatementButton()
