@@ -24,6 +24,7 @@
 		D118B3E22046AF8E00DD8450 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D118B3E12046AF8E00DD8450 /* DashboardScreen.swift */; };
 		D13359F4204CA33E00EC3147 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D13359F3204CA33E00EC3147 /* README.md */; };
 		D134C3072044ACD70025CD20 /* XCTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D134C3062044ACD70025CD20 /* XCTestExtension.swift */; };
+		D14D8DE8205D32E500958C14 /* DashboardScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D8DE7205D32E500958C14 /* DashboardScreenTests.swift */; };
 		D15B06D5205885C500F591CC /* Accounts.png in Resources */ = {isa = PBXBuildFile; fileRef = D15B06D1205885C400F591CC /* Accounts.png */; };
 		D15B06D6205885C500F591CC /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = D15B06D2205885C400F591CC /* Login.png */; };
 		D15B06D7205885C500F591CC /* Statement.png in Resources */ = {isa = PBXBuildFile; fileRef = D15B06D3205885C400F591CC /* Statement.png */; };
@@ -82,6 +83,7 @@
 		D1408616204DD6D300DA7680 /* test_without_building.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test_without_building.sh; sourceTree = "<group>"; };
 		D1408617204DD6F000DA7680 /* only_test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = only_test.sh; sourceTree = "<group>"; };
 		D1408618204DD70400DA7680 /* skip_testing.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = skip_testing.sh; sourceTree = "<group>"; };
+		D14D8DE7205D32E500958C14 /* DashboardScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenTests.swift; sourceTree = "<group>"; };
 		D15B06D1205885C400F591CC /* Accounts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Accounts.png; sourceTree = "<group>"; };
 		D15B06D2205885C400F591CC /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
 		D15B06D3205885C400F591CC /* Statement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Statement.png; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				D118B3E12046AF8E00DD8450 /* DashboardScreen.swift */,
+				D14D8DE7205D32E500958C14 /* DashboardScreenTests.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				D134C3072044ACD70025CD20 /* XCTestExtension.swift in Sources */,
 				D1CC80B62058208100E8CE1C /* StatementScreen.swift in Sources */,
 				D1CC80BB2058490100E8CE1C /* LoginHelper.swift in Sources */,
+				D14D8DE8205D32E500958C14 /* DashboardScreenTests.swift in Sources */,
 				D161A091204432360007DFBD /* LoginScreen.swift in Sources */,
 				D1CC80B82058454C00E8CE1C /* StatementScreenTests.swift in Sources */,
 				D1CC80BD205856AD00E8CE1C /* Constants.swift in Sources */,

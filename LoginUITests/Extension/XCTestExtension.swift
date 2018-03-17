@@ -44,7 +44,7 @@ extension XCTestCase {
         let expectation = XCTNSPredicateExpectation(predicate: predicate, object: element)
         let result = XCTWaiter.wait(for: [expectation], timeout: time)
         guard result == .completed else {
-            XCTFail("Could noy find \(element)")
+            XCTFail("Could not find \(element)")
             return
         }
     }

@@ -3,6 +3,15 @@ import XCTest
 
 class StatementScreen {
 
+    func cellAt(row: Int) -> XCUIElement {
+        let cell = XCUIApplication().cells.matching(identifier: identifierForStatementRowAt(row: row)).firstMatch
+        return cell
+    }
+
+    private func identifierForStatementRowAt(row: Int) -> String {
+        return "transactionRow_\(row)"
+    }
+
     func transactionDateElementFor(cell: XCUIElement) -> XCUIElement {
         let element = elementFor(cell: cell, matching: "transactionDate")
         return element
@@ -30,15 +39,6 @@ class StatementScreen {
 
     func hasTitle(title: String) -> Bool {
         return XCUIApplication().navigationBars.matching(identifier: title).firstMatch.exists
-    }
-
-    private func identifierForStatementRowAt(row: Int) -> String {
-        return "transactionRow_\(row)"
-    }
-
-    func cellAt(row: Int) -> XCUIElement {
-        let cell = XCUIApplication().cells.matching(identifier: identifierForStatementRowAt(row: row)).firstMatch
-        return cell
     }
 
     private func elementFor(cell: XCUIElement, matching identifier: String) -> XCUIElement {

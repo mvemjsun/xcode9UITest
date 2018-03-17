@@ -5,7 +5,8 @@ class WelcomeController: UIViewController {
     @IBOutlet weak var statementButton: UIButton!
     @IBOutlet weak var accountsButton: UIButton!
     var tapGestureRecogniser: UITapGestureRecognizer?
-
+    @IBOutlet weak var titleMessage: UILabel!
+    
     var interactor: WelcomeInteractor?
 
     override func viewDidLoad() {
@@ -54,6 +55,7 @@ extension WelcomeController {
         accountsButton.accessibilityIdentifier = Screen.DashBoard.accountsButton
         navigationItem.rightBarButtonItem?.accessibilityIdentifier = Screen.DashBoard.unlockedButton
         navigationItem.leftBarButtonItem?.accessibilityIdentifier = Screen.DashBoard.logoutButton
+        titleMessage.accessibilityIdentifier = Screen.DashBoard.welcomeText
     }
 }
 

@@ -132,7 +132,7 @@
             </objects>
             <point key="canvasLocation" x="696.79999999999995" y="124.58770614692655"/>
         </scene>
-        <!--Welcome-->
+        <!--Account Dashboard-->
         <scene sceneID="AOr-Ld-GiV">
             <objects>
                 <viewController id="zkJ-kg-ejh" customClass="WelcomeController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
@@ -202,10 +202,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dNA-t1-Ckh"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="iYd-lC-2SI"/>
+                    <navigationItem key="navigationItem" title="Account Dashboard" id="iYd-lC-2SI"/>
                     <connections>
                         <outlet property="accountsButton" destination="MwE-aW-gLv" id="pzb-2V-TAB"/>
                         <outlet property="statementButton" destination="M6X-GS-nD8" id="kuk-Yg-CS6"/>
+                        <outlet property="titleMessage" destination="nPI-0q-Siq" id="SA7-og-O9a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2G-dR-30L" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -4,10 +4,13 @@ class StatementViewInteractor: NSObject, UITableViewDataSource {
 
     var dataSource: StatementDataSource
     var account: Account
+    var presenter: StatementViewPresenter
 
     override init() {
+        // Create a default account for testing with starting balance of 2000
         account = Account(balance: 2000)
         dataSource = StatementDataSource(account: account)
+        presenter = StatementViewPresenter()
         super.init()
     }
 
@@ -22,7 +25,7 @@ class StatementViewInteractor: NSObject, UITableViewDataSource {
         guard let statement = dataSource.statement else {
             fatalError("No data")
         }
-        cell.configure(with: statement[indexPath.row])
+        presenter.configure(cell: cell, with: statement[indexPath.row])
         return cell
     }
 
